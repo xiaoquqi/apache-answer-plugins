@@ -34,9 +34,7 @@ services:
       timeout: 5s
       retries: 6
   answer:
-    image: apache/answer
-    build:
-      context: .
+    image: registry.cn-beijing.aliyuncs.com/ray-dockers/apache-answer-plugins:latest
     ports:
       - '9080:80'
     restart: on-failure
