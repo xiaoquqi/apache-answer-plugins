@@ -8,6 +8,12 @@ RUN answer build \
     --with github.com/apache/incubator-answer-plugins/connector-basic \
     --with github.com/apache/incubator-answer-plugins/connector-google \
     --with github.com/apache/incubator-answer-plugins/search-algolia \
+    --with github.com/apache/incubator-answer-plugins/connector-github \
+    --with github.com/apache/incubator-answer-plugins/connector-dingtalk \
+    --with github.com/apache/incubator-answer-plugins/editor-formula \
+    --with github.com/apache/incubator-answer-plugins/editor-chart \
+    --with github.com/apache/incubator-answer-plugins/storage-s3 \
+    --with github.com/apache/incubator-answer-plugins/search-meilisearch \
     --output /usr/bin/new_answer
 
 FROM alpine
